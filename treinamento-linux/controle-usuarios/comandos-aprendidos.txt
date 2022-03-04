@@ -1,0 +1,136 @@
+========== Contrele de usuarios e permissões ==========
+
+Criar novo usuario:
+	sudo adduser "nome do usuario"
+
+Trocar de usuario:
+	su "Nome do usuario"
+
+Alterar a senha do usuario:
+	passwd "Nome do usuario"
+	O comando pede uma nova senha mais segura.
+	
+Exibir as infromações de login de todos usuarios
+	lastlog
+
+Listagem de saída e entrada do usuario no sistema:
+	last
+
+Exibir o nome do usuario atual logado:
+	logname
+
+Exibir todos os identificadores do usuário:
+	id
+
+Exibir todos os usuário:
+	cat/etc/passwd
+
+Remover um usuario e sua pasta pessoal:
+	sudo userdel -r "Nome do usuario"
+
+Exibir todos os grupos do sistema:
+	cat /etc/group
+
+Exibir todos os grupos de um usuario:
+	groups
+
+Como criar um grupo:
+	sudo addgroup ubuntu
+
+Adiciona um usuario a um grupo
+	sudo adduser "nome do usuario" "nome do grupo"
+	sudo gpasswd -a "nome do usuario" "nome do grupo"
+
+Remover um usuario de um grupo:
+	sudo gpasswd -d "nome do usuario" "nome do grupo"
+
+Remover um grupo
+	sudo groupdel "nome do grupo"
+
+Permissões:
+	r - leitura
+	w - escrita
+	x - execução
+
+Verificar permissões em um diretório:
+	ls -lh
+	exemplo de código de permissão:
+
+	"drwxrwxr-x"
+
+	primeira letra - tipo do arquivo(d)
+	após ela são as permissões
+	1-3: permissões do dono(rwx)
+	4-6: permissões do grupo(rwx)
+	7-9: aqueles que não estão no grupo(r-x)
+
+Mudar a permissão de um arquivo ou diretório
+	chmod
+	
+	Modo octal de permissões (3 digitos):
+	(4 - r; 2 - w; 1 - x)
+	Primeiro digito - dono
+	Segundo digito - grupo
+	Terceiro digito - outros
+
+	Exemplo de permissão:
+	rw-r--r--
+	código octal: 644
+	rwxrwxr-x
+	código octal: 775
+
+========== Compactadores e Descompactadores ==========
+
+gzip:
+
+	gzip cria um arquivo do tipo .gz
+	
+	Compactar:
+		gzip "nome do arquivo"
+		gzip -9 "nomedo arquivo" (usa a compactação máxima)	 
+	
+	Descompactar:
+		gunzip "nome do arquivo"
+		
+
+zip:
+	cria uma arquivo do tipo .zip
+	Compactar:
+		zip "nome do arquivo que será gerado"
+		 "nome dos arquivos a serem compactados"
+	
+	Descompactar:
+		unzip "nome do arquivo zip"
+
+bzip2:
+	cria um arquivo do tipo .bz2
+	Compactar:
+		bzip2 "nome do arquivo"
+
+	Decompactar:
+		bzip2 -d "nome do arquivo bz2"
+
+
+rar:
+	cria uma arquivo do tipo .rar (precisa ser instalado).
+	Compactar:
+		rar a "nome do arquivo .rar"
+		      "nome dos arquivos a serem compactados
+
+	Descompactar:
+		rar x "nome do arquivo rar"
+
+
+Arquivadores:
+	É possível arquivar um conjunto de arquivos e compacta-los
+	com qualquer um dos outros tipos de compactação.
+
+	Compactar:
+		tar -cf "nome do arquivo tar" 
+			"nome dos arquivos a serem arquivados"
+		
+	Descompactar:
+		tar -xvf "nome do arquivo tar"
+		tar -xvf "nome do arquivo tar" -C "diretorio"
+		(serve para descompactar em um diretorio especifico)
+

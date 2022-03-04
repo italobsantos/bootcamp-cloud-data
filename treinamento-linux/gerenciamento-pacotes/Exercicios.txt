@@ -1,0 +1,21 @@
+1 - Instale o wireshark com o gerenciador apt.
+	R: sudo apt install wireshark
+2 - Atualize o wireshark.
+	R: sudo apt upgrade wireshark
+3 - Remova o Wireshark.
+	R: sudo apt remove wireshark
+4 - Atualize o sistema.
+	R: sudo apt update && apt upgrade
+5 - Baixe e intale o pacote deb do postresql.
+	R: sudo dpkg -i "nome pacote"
+6 - Remova o postresql.
+	R: sudo dpkg -I "nome do pacote" (para verificar o nome para remoção)
+	   sudo dpkg -r "nome na decrição do pacote do comando anterior"
+7 - Baixe o pacote do postresql com o gerenciador de pacotes rpm.
+	R: sudo rpm -ivh --nodeps "nome do pacote"
+8 - Remova o pacote postgresql com o gerenciador rpm.
+	R: sudo rpm -e "nome do pacote"
+9 - Com o gerenciador yum instale o pacote postgesql.
+	R: sudo yum install postgresql
+10 - Remova o pacote postgresql.
+	R: sudo yum remove postgresql

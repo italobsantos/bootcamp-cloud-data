@@ -2,7 +2,7 @@
 
 ---
 
-- controle-usuario: Arquivo com comandos de troca de usuario, criação de usuario dentre outros comandos destinados a configuração de usuario no ambiente Linux.
+- controle-usuarios: Arquivo com comandos de troca de usuario, criação de usuario dentre outros comandos destinados a configuração de usuario no ambiente Linux.
 
 - fundamentos-de-redes-linux: Arquivos com alguns comandos de verificação de hosts e ips além de arquivos de teste.
 

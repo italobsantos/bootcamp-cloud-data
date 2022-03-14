@@ -1,4 +1,4 @@
-========== Contrele de usuarios e permissões ==========
+========== Controle de usuarios e permissões ==========
 
 Criar novo usuario:
 	sudo adduser "nome do usuario"

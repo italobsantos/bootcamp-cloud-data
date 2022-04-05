@@ -1,9 +1,9 @@
 # image_processing
 
 The package image_processing is used for:
+
     Processing:
         - Histogram matching
-        
         - Structural similarity
         - Resize image
     Utils:

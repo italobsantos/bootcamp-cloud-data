@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
     page_description = f.read()
 
 with open("requeriments.txt") as f:
-    requirements = f.read().splitlines()
+    requeriments = f.read().splitlines()
 
 setup(
     name= "image_processing",

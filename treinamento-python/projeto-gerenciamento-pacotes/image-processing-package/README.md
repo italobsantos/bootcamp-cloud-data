@@ -2,7 +2,7 @@
 
 The package image_processing is used for:
     Processing:
-        - Histogram matching
+        - Histogram matching \n
         - Structural similarity
         - Resize image
     Utils:

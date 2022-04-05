@@ -23,5 +23,5 @@ pip install image_processing
 ## Author
 Karina
 
-##License
+## License
 [MIT](https://choosealicense.com/license/mit/)
